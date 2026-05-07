@@ -1,5 +1,3 @@
-# QR-Service-System-
-Inovasi yang diterapkan pada UMKM mie ayam bakso yaitu penggunaan sistem QR Smart Service yang terintegrasi dalam satu kode QR untuk memudahkan pelanggan mengakses berbagai layanan secara digital.
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -132,12 +130,24 @@ Inovasi yang diterapkan pada UMKM mie ayam bakso yaitu penggunaan sistem QR Smar
         <strong>Rp4.000</strong>
       </div>
 
-      <button>Pesan Sekarang</button>
+      <button onclick="document.getElementById('popup').style.display='block'">Pesan Sekarang</button>
+    
+      <div id="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);">
+        <div style="background:white; max-width:350px; margin:80px auto; padding:20px; border-radius:20px;">
+          <h2>Pilih Menu</h2>
+          <label><input type='checkbox'> Mie Ayam - Rp12.000</label><br><br>
+          <label><input type='checkbox'> Bakso - Rp13.000</label><br><br>
+          <label><input type='checkbox'> Mie Ayam + Bakso Besar - Rp20.000</label><br><br>
+          <label><input type='checkbox'> Es Teh Manis - Rp4.000</label><br><br>
+          <button onclick="alert('Pesanan berhasil dibuat!');">Checkout</button>
+          <button onclick="document.getElementById('popup').style.display='none'" style="background:#999; margin-top:10px;">Tutup</button>
+        </div>
+      </div>
     </div>
 
     <div class="card qris">
       <h2>Pembayaran QRIS</h2>
-      <div class="fake-qr"></div>
+      <img src="WhatsApp Image 2026-05-07 at 20.10.39.jpeg" alt="QRIS" style="width:220px;border-radius:20px;box-shadow:0 0 10px rgba(0,0,0,0.2);">
       <p><b>Demo QRIS</b></p>
       <p>Scan untuk simulasi pembayaran</p>
     </div>
