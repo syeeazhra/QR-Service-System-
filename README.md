@@ -159,7 +159,7 @@
 
       <textarea rows="5" placeholder="Tulis kritik dan saran di sini..."></textarea>
 
-      <button>Kirim Masukan</button>
+      <button onclick="alert('Terima kasih atas kritik dan sarannya 😊')">Kirim Masukan</button>
     </div>
 
     <div class="footer">
